@@ -1,0 +1,169 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+.hero {
+    height: 450px;
+    background:linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('https://www.ruseducation.in/wp-content/uploads/2023/08/Medical-Education-Exploring-the-Present-and-Shaping-the-Future.webp') center/cover no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+.hero-overlay {
+    padding: 50px 20px;
+    text-align: center;
+    color: #fff;
+}
+
+.hero-overlay h1 {
+    font-size: 48px;
+    margin-bottom: 10px;
+}
+
+.hero-overlay p {
+    font-size: 20px;
+}
+.section.mvvs {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 30px;
+    padding: 60px 20px;
+    background-color: #f9f9f9;
+}
+
+.mvvs-item {
+    flex: 1 1 250px;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.mvvs-item h3 {
+    margin-bottom: 15px;
+    color: #4CAF50;
+}
+
+.mvvs-item p {
+    font-size: 16px;
+    color: #555;
+}
+.section.services {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.section.services h2 {
+    font-size: 36px;
+    margin-bottom: 30px;
+    color: #333;
+}
+
+.services-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+.service-card {
+    flex: 1 1 220px;
+    background-color: whitesmoke;
+    color: black;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
+}
+.service-card img {
+    width: 120px;      
+    height: 120px;
+    margin-bottom: 15px;
+}
+
+.service-card h4 {
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+.service-card p {
+    font-size: 15px;
+}
+.community {
+    padding: 80px 90px;
+    background-color: #f5fdf7;
+}
+
+.community h2 {
+    text-align: center;
+    font-size: 34px;
+    color: #2e7d32;
+    margin-bottom: 25px;
+}
+
+.community-intro {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto 50px auto;
+    font-size: 17px;
+    color: #555;
+    line-height: 1.7;
+}
+
+.community-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 50px;
+}
+.community-text {
+    flex: 1.2;
+}
+
+.community-text h3 {
+    font-size: 26px;
+    color: #388e3c;
+    margin-bottom: 15px;
+}
+
+.community-text p {
+    font-size: 16px;
+    color: #555;
+    line-height: 1.7;
+    margin-bottom: 15px;
+}
+.community-images {
+    flex: 1;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+}
+
+.community-images img {
+    width: 80%;
+    height: 150px;
+    object-fit: contain;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+.community-images img:last-child {
+    grid-column: span 2;
+}
+@media(max-width: 768px) {
+    .mvvs-item, .service-card {
+        flex: 1 1 100%;
+    }
+
+    .hero-overlay h1 {
+        font-size: 32px;
+    }
+
+    .hero-overlay p {
+        font-size: 16px;
+    }
+}

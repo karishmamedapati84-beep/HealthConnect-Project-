@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Admin Dashboard | HealthConnect</title>
+<link rel="stylesheet" href="admindashboard.css">
+</head>
+<body>
+<div class="layout">
+<aside class="sidebar">
+<h2>HealthConnect</h2>
+<ul>
+<li onclick="showPage('home')">🏠 Dashboard</li>
+<li onclick="showPage('doctors')">👨‍⚕️ Doctors</li>
+<li onclick="showPage('patients')">🧑‍🤝‍🧑 Patients</li>
+<li onclick="showPage('appointments')">📅 Appointments</li>
+<li onclick="logout()">🚪 Logout</li>
+</ul>
+</aside>
+<main class="main">
+<div class="topbar">
+<h3>Admin Dashboard</h3>
+<span>Welcome, Admin</span>
+</div>
+<section id="home" class="page active">
+<div class="stats">
+<div class="box">
+Doctors<br>
+<b id="doctorCount">0</b>
+</div>
+
+<div class="box">
+Patients<br>
+<b id="patientCount">0</b>
+</div>
+
+<div class="box">
+Appointments<br>
+<b id="appointmentCount">0</b>
+</div>
+
+</section>
+<section id="doctors" class="page">
+
+<h2>Doctors Management</h2>
+
+<h3>Add Doctor</h3>
+
+<form id="doctorForm">
+
+<input type="text" id="doctorName" placeholder="Doctor Name" required>
+
+<input type="text" id="doctorDept" placeholder="Department" required>
+
+<input type="number" id="doctorExp" placeholder="Experience (Years)" required>
+
+<input type="email" id="doctorEmail" placeholder="Doctor Email" required>
+
+<button type="submit">Add Doctor</button>
+
+</form>
+
+<h3>Doctors List</h3>
+
+<table id="doctorsTable" border="1" cellpadding="10">
+
+<thead>
+<tr>
+<th>Name</th>
+<th>Department</th>
+<th>Experience</th>
+<th>Email</th>
+<th>Action</th>
+</tr>
+</thead>
+
+<tbody>
+</tbody>
+
+</table>
+
+</section>
+<section id="patients" class="page">
+
+<h2>Registered Patients</h2>
+
+<table id="patientsTable" border="1" cellpadding="10">
+
+<thead>
+<tr>
+<th>Name</th>
+<th>Age</th>
+<th>Email</th>
+<th>Action</th>
+</tr>
+</thead>
+
+<tbody>
+</tbody>
+
+</table>
+
+</section>
+<section id="appointments" class="page">
+
+<h2>Appointments</h2>
+
+<table id="appointmentsTable" border="1" cellpadding="10">
+
+<thead>
+<tr>
+<th>Name</th>
+<th>Email</th>
+<th>Age</th>
+<th>Department</th>
+<th>Service</th>
+<th>Date</th>
+<th>Doctor</th>
+<th>Action</th>
+</tr>
+</thead>
+<tbody>
+</tbody>
+</table>
+</section>
+</main>
+</div>
+<script src="admindashboard.js"></script>
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Contact Us | HealthConnect</title>
+
+    <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="home1.css">
+</head>
+<body>
+
+<div class="navbar">
+    <div class="logo">HealthConnect</div>
+    <ul>
+        <li><a href="home.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="specialities.html">Specialities</a></li>
+        <li><a href="appointments.html">Appointments</a></li>
+        <li><a href="updates.html">Updates</a></li>
+        <li><a href="contact.html" class="active">Contact Us</a></li>
+        
+        <li class="profile-menu">
+            <div class="profile-btn" id="profileBtn">
+                <span class="profile-icon">👤</span>
+                <span id="patient-name">Patient</span>
+            </div>
+
+            <ul class="dropdown" id="dropdownMenu">
+                <li><a href="patient-history.html">Patient History</a></li>
+                <li><a href="patient-profile.html">Patient Profile</a></li>
+                <li><a href="#" id="logoutBtn">Logout</a></li>
+            </ul>
+        </li>
+    </ul>
+</div>
+    <section class="contact">
+        <h2>Contact Us</h2>
+        <form>
+            <label>Name</label>
+            <input type="text" placeholder="Your Name" required>
+            <label>Email</label>
+            <input type="email" placeholder="Your Email" required>
+            <label>Message</label>
+            <textarea placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+        <div class="contact-info">
+            <p>Email: info@healthconnect.com</p>
+            <p>Phone: +91 12345 67890</p>
+            <p>Address: 123 Health St, City</p>
+        </div>
+    </section>
+    <script src="navbar.js"></script>
+    <script src="contact.js"></script>
+    <script src="logout.js"></script>
+</body>
+</html>
