@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<title>Patient History | HealthConnect</title>
+
+<link rel="stylesheet" href="navbar.css">
+<link rel="stylesheet" href="patient-history.css">
+
+</head>
+
+<body>
+<div class="navbar">
+<div class="logo">HealthConnect</div>
+
+<ul class="nav-links">
+<li><a href="home.html">Home</a></li>
+<li><a href="appointments.html">Appointments</a></li>
+<li><a href="patient-history.html" class="active">Patient History</a></li>
+</ul>
+
+</div>
+<section class="history-section">
+
+<h1>Patient History</h1>
+<div class="search-container">
+
+<input
+type="text"
+id="searchInput"
+placeholder="Search Department"
+onkeyup="searchAppointments()"
+>
+
+<button class="search-btn" onclick="searchAppointments()">
+Search
+</button>
+
+</div>
+<table class="history-table">
+
+<thead>
+<tr>
+<th>Patient Name</th>
+<th>Age</th>
+<th>Department</th>
+<th>Service</th>
+<th>Doctor</th>
+<th>Date</th>
+<th>Status</th>
+<th>Action</th>
+</tr>
+</thead>
+
+<tbody id="historyTable">
+
+</tbody>
+
+</table>
+
+</section>
+
+<script src="patient-history.js"></script>
+
+</body>
+</html>

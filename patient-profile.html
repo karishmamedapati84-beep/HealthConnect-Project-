@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<title>Patient Profile | HealthConnect</title>
+
+<link rel="stylesheet" href="navbar.css">
+<link rel="stylesheet" href="patient-profile.css">
+
+</head>
+
+<body>
+
+<div class="navbar">
+<div class="logo">HealthConnect</div>
+
+<ul class="nav-links">
+<li><a href="home.html">Home</a></li>
+<li><a href="appointments.html">Appointments</a></li>
+<li><a href="patient-history.html">Patient History</a></li>
+<li><a href="patient-profile.html" class="active">Profile</a></li>
+</ul>
+</div>
+
+<div class="container">
+
+<h1 class="title">Patient Profile</h1>
+
+<div class="profile-card">
+
+<div class="profile-header">
+<h2 id="nameHeader"></h2>
+</div>
+
+<div class="profile-row">
+<div class="label">Name</div>
+<div class="value" id="name"></div>
+</div>
+
+<div class="profile-row">
+<div class="label">Email</div>
+<div class="value" id="email"></div>
+</div>
+
+<div class="profile-row">
+<div class="label">Phone</div>
+<div class="value" id="phone"></div>
+</div>
+
+<div class="profile-row">
+<div class="label">Age</div>
+<div class="value" id="age"></div>
+</div>
+
+<button class="edit-btn" onclick="editProfile()">Edit Profile</button>
+
+<button class="logout-btn" onclick="logout()">Logout</button>
+
+</div>
+
+</div>
+
+<script src="patient-profile.js"></script>
+
+</body>
+</html>
