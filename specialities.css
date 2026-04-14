@@ -1,0 +1,149 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+.hero {
+  width: 100%;
+  height: 100vh; 
+  min-height: 400px;
+  background-image: url("sps.jpeg");
+  background-position: center;
+  background-size: cover; 
+  background-repeat: no-repeat;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.45);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.hero-content {
+  position: relative; 
+  z-index: 2;
+  padding: 20px; 
+}
+
+.hero-content h1 {
+  color: #fff;
+  font-size: 48px;
+  margin-bottom: 10px;
+}
+
+.hero-content p {
+  color: #e0f2ed;
+  font-size: 18px;
+}
+.specialities {
+  padding: 70px 60px;
+  background: #f7f9f8;
+}
+.department {
+  max-width: 1200px;
+  margin: 0 auto 70px auto;
+  background: #ffffff;
+  border-radius: 18px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+  overflow: hidden;
+}
+.row {
+  display: flex;
+  align-items: center; 
+  gap: 50px;
+  padding: 40px;
+}
+.row.reverse {
+  flex-direction: row-reverse;
+}
+.dept-image img {
+  width: 420px;
+  height: 280px;
+  object-fit: cover;
+  border-radius: 14px;
+}
+.dept-info {
+  flex: 1;
+}
+
+.dept-info h2 {
+  font-size: 30px;
+  color: #2b4d43;
+  margin-bottom: 12px;
+}
+
+.dept-info p {
+  font-size: 16px;
+  line-height: 1.7;
+  color: #555;
+  margin-bottom: 18px;
+}
+
+.dept-info h3 {
+  font-size: 18px;
+  color: #3b7f6b;
+  margin-bottom: 8px;
+}
+
+.dept-info ul {
+  padding-left: 20px;
+  margin-bottom: 15px;
+}
+
+.dept-info ul li {
+  font-size: 15px;
+  margin-bottom: 6px;
+}
+
+.doctors li {
+  font-weight: 500;
+}
+.dept-info p:last-child {
+  margin-top: 6px;
+  font-size: 15px;
+}
+@media (max-width: 900px) {
+  .row,
+  .row.reverse {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .dept-image img {
+    width: 100%;
+    height: auto;
+  }
+
+  .dept-info ul {
+    text-align: left;
+  }
+}
+.book-btn {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 10px 22px;
+  background-color: #0d6efd;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: 500;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.book-btn:hover {
+  background-color: #084298;
+  transform: translateY(-2px);
+}
